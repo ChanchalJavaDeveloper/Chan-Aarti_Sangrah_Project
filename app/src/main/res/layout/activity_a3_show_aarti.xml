@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".A3_ShowAarti">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderColor"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="@color/md_white_1000"
+            android:text="Aarti Sangrah"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></TextView>
+
+        <ImageView
+            android:id="@+id/A3_btn_ZoomIn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/add"></ImageView>
+
+        <ImageView
+            android:id="@+id/A3_btn_ZoomOut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/minus"></ImageView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/A3_btn_Hindi"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@color/TabActive"
+            android:gravity="center"
+           android:textSize="25dp"
+            android:text="हिंदी"
+            android:textColor="@color/TabInactive" />
+
+        <TextView
+            android:id="@+id/A3_btn_English"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@color/TabInactive"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="English"
+            android:textColor="@color/TabActive"
+            android:textSize="25.3dp" />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/md_red_A700"
+        android:textStyle="bold"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:background="@color/md_brown_100"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="Aarti Name"
+        android:id="@+id/A3_txt_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/A3_txt_Description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textSize="18sp"></TextView>
+    </ScrollView>
+</LinearLayout>

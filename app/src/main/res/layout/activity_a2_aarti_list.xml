@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".A2_AartiList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderColor"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/A2_ll_Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/swastik"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aarti Sangrah"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/md_yellow_A100"></TextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/A2_btn_ShowSearch"
+                android:src="@drawable/baseline_youtube_searched_for_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="#FFFF82"
+                android:layout_gravity="center"></androidx.appcompat.widget.AppCompatImageView>
+        </LinearLayout>
+
+        <SearchView
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/A2_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/A2_Lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ECE7E7"
+        android:dividerHeight="1dp"
+        android:padding="10dp"></ListView>
+
+</LinearLayout>
